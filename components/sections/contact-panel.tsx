@@ -21,18 +21,18 @@ export function ContactPanel() {
           Contact
         </motion.p>
         <motion.h2 variants={sectionReveal} className="mt-4 max-w-3xl font-display text-3xl font-semibold leading-tight text-text md:text-4xl">
-          Need a SaaS or AI product shipped with premium quality?
+          Need a product partner to define and ship a serious SaaS or AI experience?
         </motion.h2>
         <motion.p variants={sectionReveal} className="mt-4 max-w-2xl text-base leading-relaxed text-text-soft">
-          I partner with teams that need product thinking, refined interface quality, and production-ready delivery.
+          Best fit for teams that need clearer product decisions, stronger interface systems, and production-ready frontend delivery.
         </motion.p>
 
         <motion.p variants={sectionReveal} className="mt-6 text-sm text-text">
           Availability: {contactInfo.availability} {contactInfo.responseTime}
         </motion.p>
 
-        <motion.p variants={sectionReveal} className="mt-2 text-sm text-text-soft">
-          Email:{" "}
+        <motion.p variants={sectionReveal} className="mt-2 text-sm text-text">
+          Direct email:{" "}
           <a
             href={`mailto:${contactInfo.email}`}
             aria-label={`Email ${contactInfo.email}`}
@@ -40,7 +40,10 @@ export function ContactPanel() {
           >
             {contactInfo.email}
           </a>
-          {" "} | {contactInfo.location}
+        </motion.p>
+
+        <motion.p variants={sectionReveal} className="mt-1 text-sm text-text-soft">
+          {contactInfo.location}
         </motion.p>
 
         <motion.div variants={sectionReveal} className="mt-8">

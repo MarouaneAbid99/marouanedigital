@@ -8,7 +8,7 @@ import { CapabilityCard } from "@/components/sections/capability-card";
 
 export function SkillsCapabilities() {
   return (
-    <section id="skills" className="section-padding section-shell">
+    <section id="capabilities" className="section-padding section-shell">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -18,8 +18,8 @@ export function SkillsCapabilities() {
         <motion.div variants={sectionReveal}>
           <SectionHeader
             label="Capabilities"
-            title="Service-level capability blocks built around client outcomes."
-            description="Tools are secondary. The primary focus is helping teams make better product decisions, ship cleaner interfaces, and execute with less risk."
+            title="Capabilities built for teams shipping serious digital products."
+            description="From direction to delivery, each capability is focused on product clarity, execution quality, and measurable progress."
           />
         </motion.div>
 

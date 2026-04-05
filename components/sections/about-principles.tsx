@@ -6,16 +6,16 @@ import { motionTokens, sectionReveal, staggerParent } from "@/lib/motion";
 
 const principles = [
   {
-    title: "From Brief to Product Direction",
-    copy: "I turn founder goals and user signals into a clear feature roadmap and execution plan."
+    title: "Product Judgment Over Feature Noise",
+    copy: "I prioritize product decisions around user value, business leverage, and delivery reality."
   },
   {
-    title: "Design Systems That Ship",
-    copy: "Interfaces are designed as reusable systems, so delivery stays fast and consistent."
+    title: "Systems Thinking in Every Interface",
+    copy: "I design reusable interaction systems so products scale without clarity loss."
   },
   {
-    title: "Execution with Product Accountability",
-    copy: "I build and iterate in production with measurable outcomes, not static mockups."
+    title: "Execution Quality Without Handoff Friction",
+    copy: "I implement directly with frontend discipline, keeping product intent intact through shipping."
   }
 ];
 
@@ -34,8 +34,8 @@ export function AboutPrinciples() {
         <motion.div variants={sectionReveal} className="lg:col-span-5">
           <SectionHeader
             label="About"
-            title="Solo product partner for SaaS teams that need clarity, craft, and shipping discipline."
-            description="Based in Casablanca and working globally, I lead product direction, interface design, and Next.js delivery across focused client engagements."
+            title="A strategic product partner focused on decision quality, systems thinking, and delivery discipline."
+            description="I combine product judgment, interface systems thinking, and frontend execution to reduce handoff friction and improve delivery quality."
           />
         </motion.div>
 

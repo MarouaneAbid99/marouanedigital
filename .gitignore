@@ -13,3 +13,5 @@ build
 .env.test.local
 .env.production.local
 !.env.example
+
+.vercel

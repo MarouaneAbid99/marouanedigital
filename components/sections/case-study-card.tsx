@@ -31,7 +31,7 @@ export function CaseStudyCard({ project }: CaseStudyCardProps) {
       <div className="relative rounded-2xl border border-line/20 bg-canvas/55 p-4">
         <div className="mb-3 flex items-center justify-between">
           <span className="rounded-full border border-line/25 bg-surface/70 px-2.5 py-1 text-[11px] font-medium text-text-soft">
-            {project.type}
+            {project.category}
           </span>
           <span className="rounded-full border border-accent/30 bg-accent/10 px-2.5 py-1 text-[11px] font-medium text-accent">
             {project.visual.status}
@@ -88,6 +88,8 @@ export function CaseStudyCard({ project }: CaseStudyCardProps) {
         <h3 className="font-display text-2xl font-semibold text-text">{project.title}</h3>
         <p className="mt-3 text-sm leading-snug text-text-soft">{project.problem}</p>
         <p className="mt-2 text-sm font-medium leading-snug text-text">{project.outcome}</p>
+        <p className="mt-3 text-xs uppercase tracking-[0.16em] text-text-muted">{project.role}</p>
+        <p className="mt-2 text-xs text-text-soft">{project.result}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <span
@@ -98,6 +100,12 @@ export function CaseStudyCard({ project }: CaseStudyCardProps) {
             </span>
           ))}
         </div>
+        <a
+          href={project.ctaHref}
+          className="focus-ring mt-5 inline-flex items-center rounded-lg border border-line/25 bg-canvas/65 px-3 py-2 text-xs font-semibold text-text-soft transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-accent/45 hover:text-text"
+        >
+          {project.ctaLabel}
+        </a>
       </div>
     </motion.article>
   );
