@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas: 5 8 14;
+  --color-surface: 11 16 27;
+  --color-surface-strong: 16 24 38;
+  --color-text: 236 241 255;
+  --color-text-soft: 176 188 211;
+  --color-text-muted: 131 144 171;
+  --color-line: 132 154 201;
+  --color-accent: 77 127 255;
+  --color-violet: 141 108 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(60rem 40rem at 85% -15%, rgb(var(--color-violet) / 0.14), transparent 65%),
+    radial-gradient(52rem 36rem at 15% -20%, rgb(var(--color-accent) / 0.17), transparent 70%),
+    rgb(var(--color-canvas));
+  color: rgb(var(--color-text));
+  font-family: var(--font-body), ui-sans-serif, sans-serif;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: rgb(var(--color-accent) / 0.28);
+  color: rgb(var(--color-text));
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.18;
+  background-image: radial-gradient(rgb(255 255 255 / 0.09) 0.45px, transparent 0.45px);
+  background-size: 3px 3px;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 16%, black 84%, transparent 100%);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-[1200px] px-6 md:px-10 xl:px-16;
+}
+
+.section-padding {
+  @apply py-24 md:py-32 xl:py-40;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/80 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)];
+}
+
+.card-border {
+  border: 1px solid rgb(var(--color-line) / 0.16);
+}
