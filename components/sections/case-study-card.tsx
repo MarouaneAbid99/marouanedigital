@@ -86,9 +86,28 @@ export function CaseStudyCard({ project }: CaseStudyCardProps) {
 
       <div className="relative px-1 pb-1 pt-5">
         <h3 className="font-display text-2xl font-semibold text-text">{project.title}</h3>
-        <p className="mt-3 text-sm leading-snug text-text-soft">{project.problem}</p>
-        <p className="mt-2 text-sm font-medium leading-snug text-text">{project.outcome}</p>
+        <p className="mt-2 text-sm leading-snug text-text-soft">{project.overview}</p>
+
+        <p className="mt-4 text-[11px] uppercase tracking-[0.14em] text-text-muted">Problem</p>
+        <p className="mt-1 text-sm leading-snug text-text-soft">{project.problem}</p>
+
+        <p className="mt-3 text-[11px] uppercase tracking-[0.14em] text-text-muted">Solution</p>
+        <p className="mt-1 text-sm leading-snug text-text-soft">{project.solution}</p>
+
+        <p className="mt-3 text-sm font-medium leading-snug text-text">{project.outcome}</p>
         <p className="mt-3 text-xs uppercase tracking-[0.16em] text-text-muted">{project.role}</p>
+
+        <div className="mt-2 flex flex-wrap gap-2">
+          {project.keyFeatures.map((feature) => (
+            <span
+              key={feature}
+              className="rounded-full border border-line/25 bg-canvas/60 px-2.5 py-1 text-[11px] font-medium text-text-soft"
+            >
+              {feature}
+            </span>
+          ))}
+        </div>
+
         <p className="mt-2 text-xs text-text-soft">{project.result}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (

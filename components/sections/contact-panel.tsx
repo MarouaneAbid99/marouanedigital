@@ -21,7 +21,7 @@ export function ContactPanel() {
           Contact
         </motion.p>
         <motion.h2 variants={sectionReveal} className="mt-4 max-w-3xl font-display text-3xl font-semibold leading-tight text-text md:text-4xl">
-          Need a product partner to define and ship a serious SaaS or AI experience?
+          Need a product partner to define and ship a serious SaaS experience?
         </motion.h2>
         <motion.p variants={sectionReveal} className="mt-4 max-w-2xl text-base leading-relaxed text-text-soft">
           Best fit for teams that need clearer product decisions, stronger interface systems, and production-ready frontend delivery.

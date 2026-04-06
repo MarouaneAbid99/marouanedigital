@@ -18,8 +18,8 @@ export function ProjectsGrid() {
         <motion.div variants={sectionReveal}>
           <SectionHeader
             label="Selected Work"
-            title="Selected product cases with clear problem-to-outcome framing."
-            description="Each case preview captures product context, ownership scope, and delivery impact in a fast, credible format."
+            title="Four focused SaaS product cases with clear problem-to-outcome execution."
+            description="Each showcase is structured around business context, system decisions, implementation ownership, and delivery outcomes."
           />
         </motion.div>
 

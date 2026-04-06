@@ -6,16 +6,16 @@ import { motionTokens, sectionReveal, staggerParent } from "@/lib/motion";
 
 const principles = [
   {
-    title: "Product Judgment Over Feature Noise",
-    copy: "I prioritize product decisions around user value, business leverage, and delivery reality."
+    title: "Architecture Before Implementation",
+    copy: "I define system boundaries, data flow, and technical constraints before execution to reduce rework."
   },
   {
-    title: "Systems Thinking in Every Interface",
-    copy: "I design reusable interaction systems so products scale without clarity loss."
+    title: "Full-Stack Systems Thinking",
+    copy: "I connect data models, API boundaries, and interface behavior so complex products stay coherent as they scale."
   },
   {
-    title: "Execution Quality Without Handoff Friction",
-    copy: "I implement directly with frontend discipline, keeping product intent intact through shipping."
+    title: "Execution Without Handoff Drift",
+    copy: "By owning frontend and backend delivery loops, I reduce translation loss and keep product intent intact through release."
   }
 ];
 
@@ -34,8 +34,8 @@ export function AboutPrinciples() {
         <motion.div variants={sectionReveal} className="lg:col-span-5">
           <SectionHeader
             label="About"
-            title="A strategic product partner focused on decision quality, systems thinking, and delivery discipline."
-            description="I combine product judgment, interface systems thinking, and frontend execution to reduce handoff friction and improve delivery quality."
+            title="A full stack developer focused on system clarity, delivery quality, and scalable execution."
+            description="I combine architecture thinking, interface systems design, and full-stack execution to reduce handoff friction and improve delivery quality."
           />
         </motion.div>
 

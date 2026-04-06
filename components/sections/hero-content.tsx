@@ -8,16 +8,15 @@ export function HeroContent() {
   return (
     <motion.div variants={staggerParent(motionTokens.stagger.heroText)} initial="hidden" animate="visible" className="max-w-xl">
       <motion.p variants={sectionReveal} className="mb-5 font-display text-xs font-semibold uppercase tracking-[0.24em] text-accent/85">
-        Digital Product Builder for SaaS and AI products
+        Full Stack Developer for SaaS Platforms and Web Applications
       </motion.p>
 
       <motion.h1 variants={sectionReveal} className="font-display text-4xl font-semibold leading-tight text-text sm:text-5xl md:text-6xl">
-        I help teams turn product strategy into shipped, high-performing digital experiences.
+        I build scalable SaaS platforms and business applications with clean architecture and reliable execution.
       </motion.h1>
 
       <motion.p variants={sectionReveal} className="mt-6 max-w-lg text-base leading-relaxed text-text-soft md:text-lg">
-        I define, design, and deliver serious digital products with product judgment, interface systems thinking, and
-        production-ready frontend execution.
+        From backend model decisions to interface delivery, I own the path from product intent to production-ready execution.
       </motion.p>
 
       <motion.div variants={sectionReveal} className="mt-10 flex flex-col gap-3 sm:flex-row">

@@ -33,7 +33,10 @@ export type FeaturedProject = {
 export type Project = {
   title: string;
   category: string;
+  overview: string;
   problem: string;
+  solution: string;
+  keyFeatures: string[];
   outcome: string;
   role: string;
   tags: string[];
@@ -77,18 +80,21 @@ export type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   name: "MAROUANEDIGITAL",
-  title: "MAROUANEDIGITAL | Digital Product Builder for SaaS and AI Products",
+  title: "MAROUANEDIGITAL | Full Stack Developer for SaaS Platforms and Web Applications",
   description:
-    "Digital Product Builder for SaaS and AI products. I help teams turn product strategy into shipped, high-performing digital experiences.",
+    "Full stack developer building scalable SaaS platforms, dashboard systems, admin platforms, and business web applications with clean architecture and reliable execution.",
   url: "https://marouanedigital.com",
   locale: "en_US",
   keywords: [
-    "digital product builder",
-    "saaS product strategy",
-    "ai product design",
-    "frontend product engineer",
+    "full stack developer",
+    "saaS developer",
+    "dashboard systems",
+    "admin platforms",
+    "business web applications",
+    "frontend backend developer",
+    "next.js full stack developer",
     "next.js portfolio",
-    "product-led interface design",
+    "typescript developer",
     "marouane abid"
   ]
 };
@@ -114,151 +120,165 @@ export const navItems: NavItem[] = [
 
 export const credibilityItems: CredibilityItem[] = [
   {
-    title: "SaaS Workflow Expertise",
-    detail: "Experience shaping dense, decision-heavy product flows for B2B and PLG teams."
+    title: "SaaS and Admin Domain Depth",
+    detail: "Hands-on delivery across dashboards, admin operations, and workflow-heavy business products."
   },
   {
-    title: "Design-to-Code Ownership",
-    detail: "Product direction, UI system design, and frontend delivery handled end-to-end."
+    title: "End-to-End Ownership",
+    detail: "Product decisions, backend model thinking, and frontend execution handled in one loop."
   },
   {
-    title: "System-First Interfaces",
-    detail: "Reusable interaction patterns built to scale across modules and releases."
+    title: "System-First Implementation",
+    detail: "Reusable product architecture and interface systems built for long-term maintainability."
   },
   {
-    title: "Outcome-Oriented Delivery",
-    detail: "Work framed around adoption clarity, execution quality, and delivery momentum."
+    title: "Business-Aligned Delivery",
+    detail: "Work scoped around decision speed, operational reliability, and measurable product outcomes."
   }
 ];
 
 export const featuredProject: FeaturedProject = {
   title: "VisionDesk",
-  category: "Flagship AI Product Workspace",
+  category: "Flagship SaaS Operations Platform",
   context:
-    "Teams were planning in docs, tracking in spreadsheets, and deciding in chat threads. VisionDesk consolidated product context into one workspace so strategy, execution, and accountability stayed aligned.",
+    "Operations and delivery teams were managing execution across disconnected docs, spreadsheets, and status threads. VisionDesk consolidated planning, task control, and operational visibility into one SaaS workspace.",
   productDecisions: [
-    "Unified priorities, owners, and timelines into one operating layer.",
-    "Embedded AI support around real product entities instead of isolated chat prompts.",
-    "Structured decision logs so context survived handoffs and release cycles."
+    "Designed one operational model for priorities, ownership, milestones, and status flow.",
+    "Defined role-based permissions and review states to reduce execution ambiguity.",
+    "Implemented structured logs and history trails to preserve context across handoffs."
   ],
   roleOwnership:
-    "Led product direction, UX architecture, interface system design, and frontend implementation as a single owner.",
+    "Owned solution architecture, backend/frontend system decisions, data flow design, and end-to-end delivery.",
   uxSystem:
-    "Built a modular workspace system with reusable states, high-density information hierarchy, and clear patterns for planning, review, and execution.",
+    "Built a modular dashboard and admin interface system with reusable high-density patterns for planning, review, and execution.",
   technicalExecution:
-    "Delivered a Next.js + TypeScript frontend with componentized UI primitives, responsive app-shell behavior, and production-ready interaction models.",
+    "Implemented with Next.js and TypeScript, integrating API contracts, role-aware states, and scalable component architecture for production reliability.",
   outcome:
-    "Created a clearer product operating rhythm with stronger cross-team visibility, better handoff quality, and faster decision alignment.",
-  tags: ["Product Direction", "UX Systems", "Next.js", "TypeScript", "AI Integration"]
+    "Established a more reliable operating rhythm with faster operational reviews, clearer accountability, and better release predictability.",
+  tags: ["Full Stack Architecture", "Dashboard Systems", "SaaS Operations", "Next.js", "TypeScript"]
 };
 
-export const projects: Project[] = [
+export const projectRegistry: Project[] = [
   {
     title: "NexaPulse",
-    category: "SaaS Growth Intelligence Dashboard",
-    problem: "Revenue and activation signals lived in separate tools, slowing weekly decisions.",
-    outcome: "Unified KPI workspace made growth reviews faster and easier to trust.",
-    role: "Product Direction, UX Systems, Frontend",
-    tags: ["Dashboard UX", "Information Design", "Next.js"],
-    result: "Result: teams moved from fragmented reporting to one planning rhythm.",
+    category: "Revenue Intelligence Dashboard",
+    overview: "An executive analytics workspace for revenue, activation, and pipeline decision-making.",
+    problem: "Weekly growth reviews were delayed by fragmented metrics and inconsistent definitions.",
+    solution: "Built a unified KPI command center with shared metric logic and review workflows.",
+    keyFeatures: ["KPI command center", "Role-based board views", "Forecast and export workflows"],
+    outcome: "Leadership reviews moved from data reconciliation to faster, action-focused planning.",
+    role: "Full Stack Architecture, Data Modeling, Frontend Systems",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Dashboard UX"],
+    result: "Outcome: one trusted operating dashboard replaced scattered reporting rituals.",
     ctaLabel: "Read Case Study",
     ctaHref: "#contact",
     visual: {
       primaryLabel: "Executive Overview",
-      secondaryLabel: "Weekly Performance Timeline",
-      metric: "KPI Signal Clarity",
+      secondaryLabel: "Weekly Revenue and Activation Timeline",
+      metric: "Decision Signal Quality",
       status: "Shipped",
-      modules: ["MRR", "Activation", "Pipeline"],
-      sideItems: ["Forecast Sync", "Team Alerts", "Board Export"],
-      sideMetric: "Weekly Review Aligned"
+      modules: ["Revenue", "Activation", "Pipeline"],
+      sideItems: ["Forecast Sync", "Owner Alerts", "Board Export"],
+      sideMetric: "Review Cycle Aligned"
     }
   },
   {
-    title: "RoutePilot AI",
-    category: "AI Operations Routing System",
-    problem: "Support and ops teams manually triaged high-volume requests.",
-    outcome: "Designed AI-assisted routing with clear human approval checkpoints.",
-    role: "Workflow Product Design, AI UX, Frontend",
-    tags: ["AI UX", "Workflow Systems", "TypeScript"],
-    result: "Result: triage became more consistent and escalations easier to manage.",
+    title: "RoutePilot Ops",
+    category: "Operations Routing Console",
+    overview: "A workflow console for routing operational requests with clear ownership and escalation control.",
+    problem: "Manual triage created queue noise, inconsistent ownership, and missed SLA windows.",
+    solution: "Designed a rule-based routing workflow with approval checkpoints and audit visibility.",
+    keyFeatures: ["Routing rules engine", "Approval queue", "Escalation audit trail"],
+    outcome: "Support leads gained predictable routing behavior and clearer escalation handling.",
+    role: "Workflow Architecture, Backend Services, Frontend Delivery",
+    tags: ["TypeScript", "Node APIs", "Workflow Systems", "React"],
+    result: "Outcome: triage became consistent and operational load was easier to control.",
     ctaLabel: "Open Product Preview",
     ctaHref: "#contact",
     visual: {
-      primaryLabel: "Intent Router",
-      secondaryLabel: "Human-in-the-Loop Queue",
-      metric: "Routing Confidence",
-      status: "In Pilot",
-      modules: ["Classify", "Route", "Approve"],
-      sideItems: ["Policy Rules", "Escalations", "Audit Trail"],
-      sideMetric: "Escalations Structured"
+      primaryLabel: "Routing Command Panel",
+      secondaryLabel: "Approval and Escalation Queue",
+      metric: "Queue SLA Health",
+      status: "Live Pilot",
+      modules: ["Rules", "Queue", "Approvals"],
+      sideItems: ["Policy Logic", "Escalations", "Audit Trail"],
+      sideMetric: "Ownership Clarity Raised"
     }
   },
   {
     title: "LaunchBoard",
-    category: "PLG Conversion and Onboarding",
-    problem: "High-intent visitors dropped before meaningful activation.",
-    outcome: "Restructured messaging and first-run flow around user intent.",
-    role: "Product Narrative, UX, Frontend",
-    tags: ["Conversion UX", "Messaging", "Frontend"],
-    result: "Result: onboarding quality improved and demo leads became better qualified.",
+    category: "SaaS Onboarding and Activation Platform",
+    overview: "A conversion-focused onboarding product layer for SaaS trials and activation journeys.",
+    problem: "Signup growth did not convert to activation because onboarding lacked decision clarity.",
+    solution: "Reframed onboarding into modular steps with intent-based messaging and progressive setup.",
+    keyFeatures: ["Intent-based onboarding", "Activation checkpoints", "Lifecycle instrumentation"],
+    outcome: "Teams improved first-value clarity and generated more qualified product conversations.",
+    role: "Full Stack Implementation, Funnel Logic, UX Systems",
+    tags: ["Next.js", "TypeScript", "Instrumentation", "Conversion UX"],
+    result: "Outcome: onboarding quality improved with clearer funnel learning for product teams.",
     ctaLabel: "Read Case Study",
     ctaHref: "#contact",
     visual: {
-      primaryLabel: "Value Narrative Flow",
-      secondaryLabel: "Trial Activation Steps",
-      metric: "Activation Journey Improved",
+      primaryLabel: "Value Narrative Framework",
+      secondaryLabel: "Activation Workflow Stages",
+      metric: "Activation Flow Clarity",
       status: "Shipped",
-      modules: ["Headline Fit", "Proof Stack", "Activation CTA"],
-      sideItems: ["A/B Variant", "Lead Score", "CRM Push"],
-      sideMetric: "Trial Flow Clarified"
+      modules: ["Positioning", "Proof", "Activation"],
+      sideItems: ["A/B Test", "Lead Score", "CRM Sync"],
+      sideMetric: "First-Value Time Reduced"
     }
   },
   {
     title: "OpsConsole",
-    category: "Enterprise Admin Operations Console",
-    problem: "Approvals and policy actions required too many disconnected steps.",
-    outcome: "Reframed admin IA around task states and action priority.",
-    role: "Information Architecture, UX Systems, Frontend",
-    tags: ["B2B UX", "Admin Systems", "React"],
-    result: "Result: operational reviews became faster with fewer missed actions.",
+    category: "Enterprise Admin Control Center",
+    overview: "A high-density admin workspace for policy reviews, approvals, and operational safeguards.",
+    problem: "Critical policy actions were scattered across disconnected screens and inconsistent states.",
+    solution: "Redesigned admin IA around task status, risk level, and batch action workflows.",
+    keyFeatures: ["Priority action queue", "Policy inspector", "Bulk execution safeguards"],
+    outcome: "Operations teams handled high-risk actions faster with stronger review confidence.",
+    role: "Information Architecture, API Integration, Frontend Systems",
+    tags: ["React", "TypeScript", "RBAC", "Audit Logging"],
+    result: "Outcome: review cycles became faster with clearer visibility into critical actions.",
     ctaLabel: "Open Product Preview",
     ctaHref: "#contact",
     visual: {
-      primaryLabel: "Action Queue",
-      secondaryLabel: "Review and Audit Panel",
-      metric: "Operational Flow Simplified",
-      status: "V2 Rollout",
-      modules: ["Queue", "Inspector", "Bulk Actions"],
+      primaryLabel: "Operational Action Queue",
+      secondaryLabel: "Policy Review and Audit Layer",
+      metric: "Admin Flow Reliability",
+      status: "Production V2",
+      modules: ["Queue", "Inspector", "Bulk"],
       sideItems: ["Policy Check", "Owner Notes", "Rollback"],
-      sideMetric: "Action Clarity Increased"
+      sideMetric: "Critical Actions Controlled"
     }
   }
 ];
 
+export const projects: Project[] = projectRegistry;
+
 export const capabilities: Capability[] = [
   {
-    title: "Product Direction",
-    outcome: "You get clearer product decisions before expensive execution.",
-    explanation: "I define priorities, flows, and feature logic around business and user outcomes.",
-    tools: ["Discovery", "Product Mapping", "Feature Prioritization"]
+    title: "Solution Architecture",
+    outcome: "I define scalable application architecture before implementation complexity grows.",
+    explanation: "I design data models, service boundaries, and integration flows to keep delivery predictable and maintainable.",
+    tools: ["System Design", "Data Modeling", "Service Boundaries"]
   },
   {
     title: "Interface Systems",
-    outcome: "You get premium UI systems that scale without visual drift.",
-    explanation: "I design structured, reusable interface patterns for high-clarity product experiences.",
+    outcome: "I build interface systems that stay coherent as products add complexity.",
+    explanation: "Reusable patterns, interaction rules, and hierarchy logic keep high-density SaaS interfaces clear and scalable.",
     tools: ["Figma", "Design Tokens", "Interaction Patterns"]
   },
   {
-    title: "Frontend Delivery",
-    outcome: "You get production-ready interfaces aligned with product intent.",
-    explanation: "I implement component architecture and responsive behavior with quality-first code discipline.",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    title: "Full Stack Delivery",
+    outcome: "I ship production-ready frontend and backend layers with clean integration contracts.",
+    explanation: "From API implementation to interface delivery, I ensure system behavior is consistent, testable, and deployment-ready.",
+    tools: ["Next.js", "TypeScript", "Node APIs", "SQL"]
   },
   {
-    title: "AI Integration",
-    outcome: "You get practical AI features integrated into real workflows.",
-    explanation: "I design AI interactions around decisions, guardrails, and operational usability.",
-    tools: ["OpenAI APIs", "Prompt Design", "Workflow Automation"]
+    title: "Platform Architecture",
+    outcome: "I design scalable application foundations for SaaS and operations-heavy products.",
+    explanation: "Data modeling, permissions, and service boundaries are shaped to support reliable growth without rework.",
+    tools: ["Auth and Permissions", "Service Boundaries", "Observability"]
   }
 ];
 

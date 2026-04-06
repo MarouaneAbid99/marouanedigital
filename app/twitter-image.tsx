@@ -27,7 +27,7 @@ export default function TwitterImage() {
       >
         <p style={{ margin: 0, fontSize: "20px", letterSpacing: "0.12em" }}>{siteConfig.name}</p>
         <h1 style={{ margin: 0, maxWidth: "840px", fontSize: "62px", lineHeight: 1.08 }}>
-          Digital Product Builder for SaaS and AI products
+          Full Stack Developer for SaaS products
         </h1>
         <p style={{ margin: 0, color: "rgba(176,188,211,0.92)", fontSize: "26px" }}>marouanedigital.com</p>
       </div>

@@ -46,11 +46,9 @@ export default function OpenGraphImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "18px", maxWidth: "930px" }}>
-          <h1 style={{ margin: 0, fontSize: "74px", lineHeight: 1.04 }}>
-            Digital Product Builder for SaaS and AI Teams
-          </h1>
+          <h1 style={{ margin: 0, fontSize: "74px", lineHeight: 1.04 }}>Full Stack Developer for SaaS Teams</h1>
           <p style={{ margin: 0, color: "rgba(176,188,211,0.95)", fontSize: "30px", lineHeight: 1.3 }}>
-            Product strategy, premium interface systems, and production-grade frontend delivery.
+            Scalable dashboard systems, admin platforms, and reliable full stack delivery.
           </p>
         </div>
 

@@ -18,8 +18,8 @@ export function SkillsCapabilities() {
         <motion.div variants={sectionReveal}>
           <SectionHeader
             label="Capabilities"
-            title="Capabilities built for teams shipping serious digital products."
-            description="From direction to delivery, each capability is focused on product clarity, execution quality, and measurable progress."
+            title="Capabilities for teams building and scaling serious SaaS products."
+            description="From architecture to deployment, each capability is designed to improve system clarity, execution quality, and operational reliability."
           />
         </motion.div>
 

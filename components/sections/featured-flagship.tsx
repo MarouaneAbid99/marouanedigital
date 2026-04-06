@@ -17,7 +17,7 @@ export function FeaturedFlagship() {
         <motion.div variants={sectionReveal}>
           <SectionHeader
             label="Featured Flagship"
-            title={`${featuredProject.title} - flagship case in product direction, system design, and delivery.`}
+            title={`${featuredProject.title} - flagship case in full-stack architecture, dashboard systems, and delivery control.`}
             description={featuredProject.context}
           />
         </motion.div>
@@ -31,7 +31,7 @@ export function FeaturedFlagship() {
               </span>
             </div>
 
-            <h3 className="mt-4 font-display text-2xl font-semibold text-text md:text-3xl">Product Decisions</h3>
+            <h3 className="mt-4 font-display text-2xl font-semibold text-text md:text-3xl">Architecture Decisions</h3>
             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-text-soft">
               {featuredProject.productDecisions.map((decision) => (
                 <li key={decision} className="flex gap-2">
