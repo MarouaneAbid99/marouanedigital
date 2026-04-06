@@ -171,7 +171,7 @@ export const projectRegistry: Project[] = [
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Dashboard UX"],
     result: "Outcome: one trusted operating dashboard replaced scattered reporting rituals.",
     ctaLabel: "Read Case Study",
-    ctaHref: "#contact",
+    ctaHref: "/projects/nexapulse",
     visual: {
       primaryLabel: "Executive Overview",
       secondaryLabel: "Weekly Revenue and Activation Timeline",
@@ -193,8 +193,8 @@ export const projectRegistry: Project[] = [
     role: "Workflow Architecture, Backend Services, Frontend Delivery",
     tags: ["TypeScript", "Node APIs", "Workflow Systems", "React"],
     result: "Outcome: triage became consistent and operational load was easier to control.",
-    ctaLabel: "Open Product Preview",
-    ctaHref: "#contact",
+    ctaLabel: "Read Case Study",
+    ctaHref: "/projects/routepilot-ops",
     visual: {
       primaryLabel: "Routing Command Panel",
       secondaryLabel: "Approval and Escalation Queue",
@@ -217,7 +217,7 @@ export const projectRegistry: Project[] = [
     tags: ["Next.js", "TypeScript", "Instrumentation", "Conversion UX"],
     result: "Outcome: onboarding quality improved with clearer funnel learning for product teams.",
     ctaLabel: "Read Case Study",
-    ctaHref: "#contact",
+    ctaHref: "/projects/launchboard",
     visual: {
       primaryLabel: "Value Narrative Framework",
       secondaryLabel: "Activation Workflow Stages",
@@ -239,8 +239,8 @@ export const projectRegistry: Project[] = [
     role: "Information Architecture, API Integration, Frontend Systems",
     tags: ["React", "TypeScript", "RBAC", "Audit Logging"],
     result: "Outcome: review cycles became faster with clearer visibility into critical actions.",
-    ctaLabel: "Open Product Preview",
-    ctaHref: "#contact",
+    ctaLabel: "Read Case Study",
+    ctaHref: "/projects/opsconsole",
     visual: {
       primaryLabel: "Operational Action Queue",
       secondaryLabel: "Policy Review and Audit Layer",
