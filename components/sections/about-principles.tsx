@@ -39,18 +39,20 @@ export function AboutPrinciples() {
           />
         </motion.div>
 
-        <motion.div variants={sectionReveal} className="grid gap-4 md:grid-cols-2 lg:col-span-7 lg:grid-cols-1">
+        <motion.div variants={sectionReveal} className="grid gap-5 md:grid-cols-2 lg:col-span-7 lg:grid-cols-1">
           {principles.map((item, idx) => (
             <motion.article
               key={item.title}
               variants={sectionReveal}
-              whileHover={reducedMotion ? undefined : { y: -3 }}
+              whileHover={reducedMotion ? undefined : { y: -4 }}
               transition={{ duration: motionTokens.duration.standard, ease: motionTokens.ease }}
-              className="card-border rounded-2xl bg-surface/70 p-6 shadow-card"
-              style={idx === 1 ? { background: "rgb(var(--color-surface-strong) / 0.88)" } : undefined}
+              className="card-border rounded-xl bg-surface/40 border border-line/20 p-6 hover:border-line/40 transition-all duration-300 group"
             >
-              <h3 className="font-display text-lg font-semibold text-text">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-text-soft">{item.copy}</p>
+              <div className="flex items-start gap-3 mb-3">
+                <div className="text-lg font-bold text-accent/60 group-hover:text-accent transition-colors">{`0${idx + 1}`}</div>
+              </div>
+              <h3 className="font-display text-base font-semibold text-text">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-text-muted">{item.copy}</p>
             </motion.article>
           ))}
         </motion.div>

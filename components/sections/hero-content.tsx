@@ -11,12 +11,12 @@ export function HeroContent() {
         Full Stack Developer for SaaS Platforms and Web Applications
       </motion.p>
 
-      <motion.h1 variants={sectionReveal} className="font-display text-4xl font-semibold leading-tight text-text sm:text-5xl md:text-6xl">
-        I build scalable SaaS platforms and business applications with clean architecture and reliable execution.
+      <motion.h1 variants={sectionReveal} className="font-display text-5xl font-semibold leading-tight text-text sm:text-6xl md:text-7xl">
+        Full-stack developer building production SaaS platforms and business applications.
       </motion.h1>
 
-      <motion.p variants={sectionReveal} className="mt-6 max-w-lg text-base leading-relaxed text-text-soft md:text-lg">
-        From backend model decisions to interface delivery, I own the path from product intent to production-ready execution.
+      <motion.p variants={sectionReveal} className="mt-7 max-w-lg text-lg leading-relaxed text-text-soft md:text-xl">
+        I own complete implementation from architecture decisions through deployment. Dashboard systems, e-commerce platforms, booking engines, and everything in between.
       </motion.p>
 
       <motion.div variants={sectionReveal} className="mt-10 flex flex-col gap-3 sm:flex-row">

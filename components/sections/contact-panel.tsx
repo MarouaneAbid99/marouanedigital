@@ -12,7 +12,7 @@ export function ContactPanel() {
         whileInView="visible"
         viewport={{ once: true, amount: motionTokens.revealAmount }}
         variants={staggerParent(motionTokens.stagger.section)}
-        className="card-border relative overflow-hidden rounded-3xl bg-surface/80 p-7 shadow-card md:p-10"
+        className="card-border relative overflow-hidden rounded-2xl bg-surface/40 border border-line/20 p-10 md:p-12"
       >
         <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-accent/18 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 left-10 h-48 w-48 rounded-full bg-violet/20 blur-3xl" />

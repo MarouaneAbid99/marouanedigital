@@ -22,12 +22,15 @@ export function ProcessSection() {
           />
         </motion.div>
 
-        <motion.div variants={sectionReveal} className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <motion.div variants={sectionReveal} className="mt-14 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {processSteps.map((step, index) => (
-            <article key={step.title} className="card-border rounded-2xl bg-surface/72 p-5 shadow-card">
-              <p className="text-xs uppercase tracking-[0.2em] text-accent/80">{`0${index + 1}`}</p>
-              <h3 className="mt-3 font-display text-lg font-semibold text-text">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-text-soft">{step.summary}</p>
+            <article key={step.title} className="card-border rounded-xl bg-surface/40 border border-line/20 p-6 hover:border-line/40 transition-all duration-300 group">
+              <div className="flex items-center justify-between mb-4">
+                <p className="text-2xl font-bold text-text/20 font-display">{`${index + 1}`.padStart(2, '0')}</p>
+                <div className="w-1 h-8 bg-gradient-to-b from-accent to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+              <h3 className="font-display text-base font-semibold text-text">{step.title}</h3>
+              <p className="mt-3 text-xs leading-relaxed text-text-muted">{step.summary}</p>
             </article>
           ))}
         </motion.div>

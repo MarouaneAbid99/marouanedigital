@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/common/section-header";
 import { featuredProject } from "@/data/content";
@@ -22,70 +23,51 @@ export function FeaturedFlagship() {
           />
         </motion.div>
 
-        <motion.div variants={sectionReveal} className="mt-12 grid gap-7 lg:grid-cols-12">
-          <article className="card-border rounded-3xl bg-surface/78 p-6 shadow-card lg:col-span-8 md:p-7">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <p className="text-xs uppercase tracking-[0.22em] text-accent/85">{featuredProject.category}</p>
-              <span className="rounded-full border border-accent/35 bg-accent/10 px-3 py-1 text-[11px] font-semibold text-accent">
-                Flagship Case
+        <motion.div variants={sectionReveal} className="mt-14 grid gap-8 lg:grid-cols-12">
+          <article className="card-border rounded-2xl bg-surface/40 border border-line/20 p-7 lg:col-span-8">
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <p className="text-xs uppercase tracking-[0.22em] text-text-muted font-semibold">{featuredProject.category}</p>
+              <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1.5 text-[10px] font-semibold text-accent">
+                Featured
               </span>
             </div>
 
-            <h3 className="mt-4 font-display text-2xl font-semibold text-text md:text-3xl">Architecture Decisions</h3>
-            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-text-soft">
-              {featuredProject.productDecisions.map((decision) => (
-                <li key={decision} className="flex gap-2">
-                  <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-accent/90" />
+            <h3 className="font-display text-3xl font-semibold text-text mb-6 leading-tight">{featuredProject.title}</h3>
+            <p className="text-base leading-relaxed text-text-soft mb-8">{featuredProject.context}</p>
+            
+            <h4 className="font-display font-semibold text-text mb-4">Key Decisions</h4>
+            <ul className="space-y-3 text-sm leading-relaxed text-text-soft">
+              {featuredProject.productDecisions.map((decision, idx) => (
+                <li key={idx} className="flex gap-3">
+                  <span className="text-accent font-semibold flex-shrink-0">•</span>
                   <span>{decision}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="mt-7 grid gap-4 md:grid-cols-2">
-              <div className="rounded-2xl border border-line/20 bg-canvas/60 p-4">
-                <p className="text-xs uppercase tracking-[0.18em] text-text-muted">Role and Ownership</p>
-                <p className="mt-2 text-sm leading-relaxed text-text-soft">{featuredProject.roleOwnership}</p>
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              <div className="rounded-xl border border-line/20 bg-canvas/40 p-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-text-muted font-semibold mb-2">Role</p>
+                <p className="text-sm leading-relaxed text-text-soft">{featuredProject.roleOwnership}</p>
               </div>
-              <div className="rounded-2xl border border-line/20 bg-canvas/60 p-4">
-                <p className="text-xs uppercase tracking-[0.18em] text-text-muted">UX and System Decisions</p>
-                <p className="mt-2 text-sm leading-relaxed text-text-soft">{featuredProject.uxSystem}</p>
+              <div className="rounded-xl border border-line/20 bg-canvas/40 p-4">
+                <p className="text-xs uppercase tracking-[0.16em] text-text-muted font-semibold mb-2">Impact</p>
+                <p className="text-sm leading-relaxed text-text-soft">{featuredProject.outcome}</p>
               </div>
-            </div>
-
-            <div className="mt-4 rounded-2xl border border-line/20 bg-canvas/60 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-text-muted">Technical Execution</p>
-              <p className="mt-2 text-sm leading-relaxed text-text-soft">{featuredProject.technicalExecution}</p>
             </div>
           </article>
 
-          <article className="card-border relative overflow-hidden rounded-3xl bg-surface/72 p-6 shadow-card lg:col-span-4 md:p-7">
-            <div className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-accent/16 blur-3xl" />
-            <p className="relative text-xs uppercase tracking-[0.2em] text-text-muted">Outcome Framing</p>
-            <p className="relative mt-4 text-sm leading-relaxed text-text">{featuredProject.outcome}</p>
-
-            <div className="relative mt-5 rounded-2xl border border-line/20 bg-canvas/60 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-text-muted">Why It Matters</p>
-              <ul className="mt-3 space-y-2 text-xs leading-relaxed text-text-soft">
-                <li>Built as one product system, not disconnected screens.</li>
-                <li>Decisions were documented and reusable across releases.</li>
-                <li>Frontend delivery preserved design intent in production.</li>
-              </ul>
-            </div>
-
-            <div className="relative mt-6 flex flex-wrap gap-2">
-              {featuredProject.tags.map((tag) => (
-                <span key={tag} className="rounded-full border border-line/25 bg-canvas/60 px-2.5 py-1 text-[11px] text-text-muted">
-                  {tag}
-                </span>
-              ))}
-            </div>
-
-            <a
-              href="#projects"
-              className="focus-ring relative mt-8 inline-flex items-center justify-center rounded-xl border border-accent/35 bg-accent/12 px-4 py-2 text-sm font-semibold text-text transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-accent/60 hover:bg-accent/20 hover:shadow-glow"
+          <article className="card-border relative overflow-hidden rounded-2xl bg-surface/40 border border-line/20 p-7 lg:col-span-4">
+            <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-accent/12 blur-3xl" />
+            <p className="relative text-xs uppercase tracking-[0.2em] text-text-muted font-semibold">Core Practice</p>
+            <p className="relative mt-4 text-base font-semibold text-text leading-tight mb-6">{featuredProject.uxSystem}</p>
+            <p className="relative text-sm leading-relaxed text-text-muted mb-6">Built with {featuredProject.tags.slice(0, 3).join(', ')}.</p>
+            <Link
+              href="/projects/visiondesk"
+              className="relative inline-flex items-center justify-center rounded-lg border border-accent/40 bg-accent/10 px-4 py-2.5 text-xs font-semibold text-accent transition-all duration-300 hover:border-accent/60 hover:bg-accent/15"
             >
-              View Related Case Studies
-            </a>
+              Read Full Case Study →
+            </Link>
           </article>
         </motion.div>
       </motion.div>

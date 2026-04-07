@@ -12,12 +12,12 @@ export function CredibilityStrip() {
         whileInView="visible"
         viewport={{ once: true, amount: motionTokens.revealAmount }}
         variants={staggerParent(motionTokens.stagger.section)}
-        className="grid gap-3 md:grid-cols-2 xl:grid-cols-4"
+        className="grid gap-4 md:grid-cols-2 lg:grid-cols-4"
       >
         {credibilityItems.map((item) => (
-          <motion.article key={item.title} variants={sectionReveal} className="card-border rounded-2xl bg-surface/70 p-5 shadow-card">
-            <p className="font-display text-sm font-semibold text-text">{item.title}</p>
-            <p className="mt-2 text-xs leading-relaxed text-text-soft">{item.detail}</p>
+          <motion.article key={item.title} variants={sectionReveal} className="card-border rounded-xl bg-surface/40 border border-line/20 p-6 shadow-sm hover:border-line/40 transition-all duration-300">
+            <p className="font-display text-sm font-semibold text-text leading-tight">{item.title}</p>
+            <p className="mt-3 text-xs leading-relaxed text-text-muted">{item.detail}</p>
           </motion.article>
         ))}
       </motion.div>
